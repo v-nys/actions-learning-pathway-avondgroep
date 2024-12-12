@@ -20,8 +20,8 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v3
       - name: use node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18.x'
+          node-version: '22.x'
       - run: npm install
       - run: npm test
